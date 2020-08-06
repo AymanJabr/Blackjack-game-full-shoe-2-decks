@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <script defer src="script.js"></script>
+    <title>Full Blackjack game</title>
+  </head>
+  <body>
+    
+    <p id="dealerCashText">Dealer's Cash: $50</p>
+
+    <div id="dealerCardsContainer">
+    
+        <p id="dealerScoreText">16</p>
+    </div>
+
+    <br>
+
+    <div id="gamesContainer">
+      <div id="game0" class="game">
+        <div class="playerCardsContainer">
+          <div class="playerCards">
+            <img class="cards" src="./images/cards/2H.png" />
+            <img class="cards" src="./images/cards/gray_back.png" />
+          </div>
+          <p class="playerScore">18</p>
+        </div>
+
+        <div class="betContainer">
+          <div class="bettedChips">
+              <div class="chipRack">
+
+              </div>
+          </div>
+          <p class="bettedAmmountText">$50</p>
+        </div>
+
+        <div class="buttonsContainer">
+          <button  class="hitButton">Hit</button>
+          <button  class="standButton">Stand</button>
+          <button " class="doubleDownButton">Double Down</button>
+          <button  class="splitButton">Split</button>
+          <button  class="surrenderButton">Surrender</button>
+          <button  class="insuranceButton">Insurance</button>
+        </div>
+      </div>
+    </div>
+
+    <p id="playerCashText">Player Cash: $50</p>
+    <div id="bettedAmmountContainer">
+      <input type="number" id="bettedAmmountInput"  step="5" />
+    </div>
+    <p id="gameExplanationText" class="gameExplanationText"></p> 
+    <button id="playButton">Play</button>
+    <button id="restartGameButton">Restart Game</button>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+}
+
+body {
+  background: green;
+  text-align: center;
+  margin-top: 20vh;
+  margin-bottom: 50px;
+  font-size: 1.4em;
+}
+
+button {
+  font-size: 0.9em;
+  border: none;
+  border-radius: 10%;
+  padding: 5px;
+}
+button:hover {
+  background: rgb(191, 255, 249);
+}
+
+img {
+  max-width: 75vw;
+  max-height: 60vh;
+}
+
+p {
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+
+#gamesContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.game {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.dealerCardsContainer {
+  display: block;
+  margin: 0 auto;
+}
+/* bunch of classes for styling of different game UI elements */
+.dealerCards {
+}
+.dealerScore {
+}
+
+.playerCardsContainer {
+}
+.playerCards {
+}
+.playerScore {
+}
+
+.betContainer {
+}
+.bettedAmmount {
+}
+.bettedChips {
+  display: flex;
+}
+.chipRack {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.bettedAmmountText {
+}
+
+.buttonsContainer {
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-columns: auto auto;
+}
+
+#gameExplanationText {
+  color: white;
+}
+
+#bettedAmmountContainer {
+  display: flex;
+  justify-content: center;
+}
+#bettedAmmountText {
+  margin-right: 5px;
+}
+
+#playButton {
+  margin: 0 auto;
+  margin-top: 10px;
+  display: block;
+}
+
+.cards {
+  --cardsHeight: 110px;
+  height: var(--cardsHeight);
+  width: calc(var(--cardsWidth) * 1.5);
+  object-fit: cover;
+}
+
+.chip {
+  --chipsDiameter: 45px;
+  height: var(--chipsDiameter);
+  width: var(--chipsDiameter);
+  object-fit: cover;
+  margin-top: -55px;
+}
+
+.ninja {
+  display: none !important;
+}
